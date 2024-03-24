@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+</head>
+<body>
+    <script>
+        function check(){
+            let m = document.getElementById("month");
+            let y = document.getElementById("year");
+
+            if(month.value < 0 || month.value >= 12) alert("กรุณากรอกเดือนให้อยู่ในช่วง 1-12");
+            if(year.value < 0 || year.value >= 10000) alert("กรุณากรอกให้อยู่ในช่วง 1-10000");
+        }
+    </script>
+
+
+    <form action="calendar.php" method="post">
+        กรุณากรอกเงินเดือน: <input type="text" id="month" name="month" size="3" required> <br>
+        กรุณากรอกปี (พ.ศ.): <input type="text" id="year" name="year" required> <br>
+        วันที่ 1 ของเดือนตรงกับ
+        <select name="day">
+            <option value="2">วันจันทร์</option>
+            <option value="3">วันอังคาร</option>
+            <option value="4">วันพุธ</option>
+            <option value="5">วันพฤหัสบดี</option>
+            <option value="6">วันศุกร์</option>
+            <option value="7">วันเสาร์</option>
+            <option value="1">วันอาทิตย์</option>
+        </select> <br>
+
+    </form>
+    <input type="submit" value="ตกลง" onclick="return check();">
+    <input type="reset" value="ล้างข้อมูล">
+    
+</body>
+</html>
