@@ -21,6 +21,7 @@
         <th>รหัสวิชาเรียน</th>
         <th>ชื่อวิชาเรียน</th>
     </tr>
+    
         <?php
 
         $conn = new PDO("mysql:host=localhost;dbname=curriculum;charset=utf8", "root", "");

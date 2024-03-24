@@ -14,12 +14,17 @@
 <body>
     <script>
         
+        function red(){
+            let d = document.querySelector('#t1 > td');
+            d.style.backgroundColor = "red";
+        }
 
     </script>
 
     เดือน ตุลาคม ปี พ.ศ.2563 มี 31 วัน <br>
     วันที่ 1 ของเดือนตรงกับวัน พฤหัสบดี
-    <table style="text-align: center;">
+    <table style="text-align: center;" id="t1">
+        <div onmouseover="red();">
         <tr>
             <th>อา.</th>
             <th>จ.</th>
@@ -75,6 +80,8 @@
             <td>31</td>
         </tr>
 
+        </div>
+        
     </table>
 
     <?php

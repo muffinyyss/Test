@@ -11,8 +11,8 @@
             let m = document.getElementById("month");
             let y = document.getElementById("year");
 
-            if(month.value < 0 || month.value >= 12) alert("กรุณากรอกเดือนให้อยู่ในช่วง 1-12");
-            if(year.value < 0 || year.value >= 10000) alert("กรุณากรอกให้อยู่ในช่วง 1-10000");
+            if(month.value < 0 && month.value >= 12) alert("กรุณากรอกเดือนให้อยู่ในช่วง 1-12");
+            if(year.value < 0 && year.value >= 10000) alert("กรุณากรอกให้อยู่ในช่วง 1-10000");
         }
     </script>
 
