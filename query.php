@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>query.php</title>
 
     <style>
         table, th, td{
-            border:
+            border: 1px solid black;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -31,13 +32,7 @@
         $result = $conn->query($sql);
 
         while($row = $result->fetch()){
-            echo "<tr>
-                    <td> $row[0] </td>
-                    <td> $row[1] </td>
-                    <td> $row[5] </td>
-                    <td> $row[3] </td>
-                    <td> $row[4] </td>
-                  </tr>";
+            echo "<tr><td> $row[0] </td><td> $row[1] </td><td> $row[5] </td><td> $row[3] </td><td> $row[4] </td></tr>";
         }
         $conn = null;
         ?>
